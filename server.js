@@ -16,7 +16,7 @@ fs.watchFile(configFile, {
 	loadConfig(configFile);
 });
 
-if (conf.db) {
+if (config.db) {
 	pool = m.createPool({
 		connectionLimit : config.connection_limit,
 		host : config.db_host,
@@ -97,7 +97,7 @@ server.on('connection', function connection(ws) {
 				send(ws, JSON.stringify({
 					rsp : 'welcome'
 				}));
-				if (conf.db) { recordConnection(); }
+				if (config.db) { recordConnection(); }
 				break;
 			case 'notifyOfNewUser':
 				var json = JSON.stringify({
