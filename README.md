@@ -33,4 +33,15 @@ ensure the port you choose is open
 
 supervisor is a good application for managing and auto-restarting the server if it goes down
 
+here is an example supervisor configuration file
+
+``[program:socket.chat.server]``<br>
+``directory=/nodeapps/socket.chat.server/``<br>
+``command=npm start --production``<br>
+``user=root``<br>
+``process_name=socket.chat.server.process``<br>
+``numprocs=1``<br>
+``autorestart=true``<br>
+``autostart=true``<br>
+``stderr_logfile=/var/log/socket.chat.server.log``
 
