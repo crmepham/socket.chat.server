@@ -14,7 +14,7 @@ git clone this repository<br>
 
 ``git clone https://github.com/final60/socket.chat.server.git``
 
-create database for usage recording <optional><br>
+create database for usage recording <i>(optional)</i><br>
 
 ``create_database.sql``
 
