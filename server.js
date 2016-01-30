@@ -6,7 +6,6 @@ var configFile = 'config.json';
 var clients = [];
 var users = [];
 var afkUsers = [];
-var counter = 0;
 var config = {};
 var pool = null;
 
