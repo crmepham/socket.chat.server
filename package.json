@@ -1,0 +1,31 @@
+{
+	"name" : "socket.chat.server",
+	"version" : "0.0.1",
+	"description" : "A WebSocket server that serves the socket.chat application.",
+	"keywords" : [
+	    "ws",
+	    "chat",
+	    "wss",
+	    "secure",
+	    "socket.chat"
+	],
+	"author": {
+	    "name": "Christopher Mepham",
+	    "email": "crmepham@hotmail.co.uk",
+	    "url": "chrismepham.co.uk"
+	  },
+	"main" : "server.js",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/final60/socket.chat.server.git"
+	},
+	"dependencies" : {
+		"ws" : "1.0.1",
+		"mysql": "^2.5.4"
+	},
+	"license" : "",
+	"private" : true,
+	"homepage" : "https://github.com/final60/socket.chat.server",
+	"license": "GPL-3.0",
+
+}

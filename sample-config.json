@@ -1,0 +1,15 @@
+{
+	"ssl": true,
+	"host": "localhost",
+	"port": 3000,
+	"ssl_key": "/path/to/your.key",
+	"ssl_cert": "/path/to/your.crt",
+	"message_limit": 65536,
+	"db_host": "localhost",
+	"db": false,
+	"db_database": "socket_chat",
+	"db_user": "user",
+	"db_password": "password",
+	"connection_limit": 100,
+	"db_debug": false
+}
