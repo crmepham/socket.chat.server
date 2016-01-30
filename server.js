@@ -64,10 +64,10 @@ server.on('connection', function connection(ws) {
 
 	ws.on('close', function(code, message) {
 		var user = getUser(clients.indexOf(ws));
+		deleteUser(ws);
 		broadcast(ws, user.room, JSON.stringify({
 			userLeft : user.username
 		}));
-		deleteUser(ws);
 
 	});
 
@@ -179,6 +179,7 @@ function broadcast(client, room, json) {
 	for (var i = 0; i < users.length; i++) {
 		if (users[i].room === room && users[i].client !== client) {
 			users[i].client.send(json);
+			break;
 		}
 	}
 }
